@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomInputAccessoryView" customModule="FormPageFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="nextButton" destination="Ntc-Mr-x8E" id="YfN-Yz-fHc"/>
+                <outlet property="previousButton" destination="zyI-Vf-QZa" id="uNH-Sg-CeR"/>
+                <outlet property="rightMostButton" destination="DVI-EK-t1P" id="t8b-xO-h1o"/>
+                <outlet property="view" destination="DLH-BI-ibm" id="xBa-ei-P3S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DLH-BI-ibm">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="2gP-NQ-Ogu"/>
+                <barButtonItem title="&lt;" style="plain" id="zyI-Vf-QZa">
+                    <connections>
+                        <action selector="previousButtonPressed:" destination="-1" id="ofk-Hu-FVQ"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="DGm-ob-piw"/>
+                <barButtonItem title="&gt;" style="plain" id="Ntc-Mr-x8E">
+                    <connections>
+                        <action selector="nextButtonPressed:" destination="-1" id="40n-WP-ZPe"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="13G-Wd-3l1"/>
+                <barButtonItem width="20" style="plain" id="YZa-sb-uTa"/>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="KpT-t4-uH8">
+                    <inset key="imageInsets" minX="-100" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </barButtonItem>
+                <barButtonItem style="plain" id="7vg-4c-gFU"/>
+                <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="wFS-Ur-Tsm"/>
+                <barButtonItem title="Done" width="40" style="plain" id="DVI-EK-t1P">
+                    <connections>
+                        <action selector="rightMostButtonPressed:" destination="-1" id="7OW-Bu-TKZ"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="H8e-St-6ma"/>
+            </items>
+            <point key="canvasLocation" x="521" y="218"/>
+        </toolbar>
+    </objects>
+</document>
