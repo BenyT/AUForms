@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  AUAccessoryViewLoadable.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,16 +19,20 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-
 import UIKit
 
-class MenuPageFlow :AUBasePageFlow{
+protocol AUAccessoryViewLoadable{
+    /**
+    Sets accessory view above the keyboard. Use this method for controls which display keyboard.
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
-        
-        self.navigationController?.push(firstController)
-    }
+    :param: view accessory view that is going to be inserted above the keyboard
+    */
+    func setInputAccessoryView(view: UIView)
+    
+    /**
+    Call this method to recognize whether a control display accessoryview or not.
+    
+    :returns: true if control has accessoryview
+    */
+    func hasAccessoryView()->Bool
 }

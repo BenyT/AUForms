@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  FormControlDelegate.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,16 +19,13 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-
-import UIKit
-
-class MenuPageFlow :AUBasePageFlow{
+protocol AUFormViewBehaviour:class{
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
-        
-        self.navigationController?.push(firstController)
-    }
+    /**
+    Notify owner of control when control become active(selected, focused etc.)
+    
+    :param: view referance of activated control
+    */
+    func formControlViewDidActivated(view:AUBaseFormView)
 }
+

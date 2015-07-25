@@ -1,5 +1,6 @@
 //
-//  MenuPageFlow.swift
+//  VTMinValidator.swift
+//  FormPageFramework
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,16 +20,38 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-
-import UIKit
-
-class MenuPageFlow :AUBasePageFlow{
+import Foundation
+class VTMinimum: AUValidationChecking{
+    var baseValue:Double=0
+    var baseValueCallback:(()->(Double))?
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
+    init(baseValue:Double){
+        self.baseValue = baseValue
+    }
+    
+    init(baseValueCallback:()->(Double)){
+        self.baseValueCallback = baseValueCallback
+    }
+    
+    func check(value:AnyObject?)->Bool{
         
-        self.navigationController?.push(firstController)
+        assert(value != nil, "")
+        
+        var dblValue = baseValue - 1
+        if let value = value as? String{
+            dblValue = (value as NSString).doubleValue
+        } else if let value = value as? Double{
+            dblValue = value
+        }
+        
+        if (baseValueCallback != nil){
+            baseValue = baseValueCallback!()
+        }
+        
+        return dblValue >= baseValue
+    }
+    
+    func getErrorMessage()->String{
+        return "Minimum \(baseValue) required"
     }
 }

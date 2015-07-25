@@ -1,5 +1,5 @@
 //
-//  CustomSimpleButtonView.swift
+//  AUFormValidator.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,41 +19,57 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-import UIKit
 
-class CustomSimpleButtonView : AUBaseFormView{
+class AUFormValidator{
+    private var validators=[AUControlValidator]()
     
-    var buttonPressed:()->() = {arg in}
+    init(){}
+        
+    func validate() -> Bool{
+        var isFormValid = true
+        for validator in validators{
+            if(!validator.validate()){
+                isFormValid = false
+            }
+        }
+        return isFormValid
+    }
+    
+    func addValidator(validator:AUControlValidator){
+        self.validators.append(validator)
+    }
+    
+    func removeValidator(validator:AUControlValidator){       
+        if let index = Swift.find(self, validator){
+            self.validators.removeAtIndex(index)
+        }
+    }
+}
 
-    @IBOutlet private weak var simpleButton: UIButton!
+extension AUFormValidator : CollectionType{
+    typealias Index = Int
     
-    //MARK: Initializations
-    init(title: String, buttonPressCallback:()->()) {
-        super.init(title:title)
-        self.buttonPressed = buttonPressCallback
-    }
-    override init(frame: CGRect){
-        super.init(frame: frame)
-    }
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder:aDecoder)
+    var startIndex: Int {
+        return 0
     }
     
-    //MARK: Actions
-    @IBAction func simpleButtonClicked(sender: AnyObject) {
-        buttonPressed()
+    var endIndex: Int {
+        return validators.count
     }
     
-    //MARK: Overriden members
-    override func updateUI() {
-        self.simpleButton.setTitle(super.title, forState: UIControlState.allZeros)
+    subscript(i: Int) -> AUControlValidator {
+        return validators[i]
     }
     
-    override func getNibName() -> String {
-        return "CustomSimpleButtonView"
-    }
+    typealias Generator = GeneratorOf<AUControlValidator>
     
-    override func getRowHeight() -> CGFloat {
-        return 110.0
+    func generate() -> Generator {
+        var index = 0
+        return GeneratorOf {
+            if index < self.validators.count {
+                return self.validators[index++]
+            }
+            return nil
+        }
     }
 }

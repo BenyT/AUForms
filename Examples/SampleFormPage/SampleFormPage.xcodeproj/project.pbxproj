@@ -10,49 +10,42 @@
 		D37997C81B63DCF1006928AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997C71B63DCF1006928AD /* AppDelegate.swift */; };
 		D37997CF1B63DCF1006928AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37997CE1B63DCF1006928AD /* Images.xcassets */; };
 		D37997D21B63DCF1006928AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37997D01B63DCF1006928AD /* LaunchScreen.xib */; };
-		D37998021B63DF40006928AD /* BaseFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997E91B63DF40006928AD /* BaseFormController.swift */; };
-		D37998031B63DF40006928AD /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997EA1B63DF40006928AD /* BaseNavigationController.swift */; };
-		D37998051B63DF40006928AD /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997ED1B63DF40006928AD /* UITableViewExtension.swift */; };
-		D37998061B63DF40006928AD /* BasePageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997EF1B63DF40006928AD /* BasePageFlow.swift */; };
-		D37998071B63DF40006928AD /* AccessoryViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F11B63DF40006928AD /* AccessoryViewLoadable.swift */; };
-		D37998081B63DF40006928AD /* CustomAccessoryViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F21B63DF40006928AD /* CustomAccessoryViewDelegate.swift */; };
-		D37998091B63DF40006928AD /* FormControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F31B63DF40006928AD /* FormControlDelegate.swift */; };
-		D379980A1B63DF40006928AD /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F41B63DF40006928AD /* NibLoadable.swift */; };
-		D379980B1B63DF40006928AD /* TableCellLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F51B63DF40006928AD /* TableCellLoadable.swift */; };
-		D379980C1B63DF40006928AD /* ControlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F71B63DF40006928AD /* ControlValidator.swift */; };
-		D379980D1B63DF40006928AD /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F81B63DF40006928AD /* FormValidator.swift */; };
-		D379980E1B63DF40006928AD /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F91B63DF40006928AD /* Validatable.swift */; };
-		D379980F1B63DF40006928AD /* ValidationChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FA1B63DF40006928AD /* ValidationChecking.swift */; };
-		D37998101B63DF40006928AD /* VTMinimum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FB1B63DF40006928AD /* VTMinimum.swift */; };
-		D37998111B63DF40006928AD /* VTNumericString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FC1B63DF40006928AD /* VTNumericString.swift */; };
-		D37998121B63DF40006928AD /* VTRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FD1B63DF40006928AD /* VTRequired.swift */; };
-		D37998131B63DF40006928AD /* BaseFormController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37997FF1B63DF40006928AD /* BaseFormController.xib */; };
-		D37998141B63DF40006928AD /* BaseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998001B63DF40006928AD /* BaseFormView.swift */; };
-		D37998151B63DF40006928AD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998011B63DF40006928AD /* BaseView.swift */; };
-		D37998181B63DFA3006928AD /* FormControlList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998171B63DFA3006928AD /* FormControlList.swift */; };
-		D379981B1B63E096006928AD /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998191B63E096006928AD /* CustomInputAccessoryView.swift */; };
-		D379981C1B63E096006928AD /* CustomInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D379981A1B63E096006928AD /* CustomInputAccessoryView.xib */; };
+		D37998021B63DF40006928AD /* AUBaseFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997E91B63DF40006928AD /* AUBaseFormController.swift */; };
+		D37998031B63DF40006928AD /* AUBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997EA1B63DF40006928AD /* AUBaseNavigationController.swift */; };
+		D37998051B63DF40006928AD /* AUFormViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997ED1B63DF40006928AD /* AUFormViewExtension.swift */; };
+		D37998061B63DF40006928AD /* AUBasePageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997EF1B63DF40006928AD /* AUBasePageFlow.swift */; };
+		D37998071B63DF40006928AD /* AUAccessoryViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F11B63DF40006928AD /* AUAccessoryViewLoadable.swift */; };
+		D37998081B63DF40006928AD /* AUAccessoryViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F21B63DF40006928AD /* AUAccessoryViewDelegate.swift */; };
+		D37998091B63DF40006928AD /* AUFormControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F31B63DF40006928AD /* AUFormControlDelegate.swift */; };
+		D379980A1B63DF40006928AD /* AUNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F41B63DF40006928AD /* AUNibLoadable.swift */; };
+		D379980B1B63DF40006928AD /* AUFormControlLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F51B63DF40006928AD /* AUFormControlLoadable.swift */; };
+		D379980C1B63DF40006928AD /* AUControlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F71B63DF40006928AD /* AUControlValidator.swift */; };
+		D379980D1B63DF40006928AD /* AUFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F81B63DF40006928AD /* AUFormValidator.swift */; };
+		D379980E1B63DF40006928AD /* AUValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F91B63DF40006928AD /* AUValidatable.swift */; };
+		D379980F1B63DF40006928AD /* AUValidationChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FA1B63DF40006928AD /* AUValidationChecking.swift */; };
+		D37998131B63DF40006928AD /* AUBaseFormController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D37997FF1B63DF40006928AD /* AUBaseFormController.xib */; };
+		D37998141B63DF40006928AD /* AUBaseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998001B63DF40006928AD /* AUBaseFormView.swift */; };
+		D37998151B63DF40006928AD /* AUBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998011B63DF40006928AD /* AUBaseView.swift */; };
+		D37998181B63DFA3006928AD /* AUFormControlList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998171B63DFA3006928AD /* AUFormControlList.swift */; };
+		D379981B1B63E096006928AD /* AUInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998191B63E096006928AD /* AUInputAccessoryView.swift */; };
+		D379981C1B63E096006928AD /* AUInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D379981A1B63E096006928AD /* AUInputAccessoryView.xib */; };
 		D379981E1B63E17E006928AD /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379981D1B63E17E006928AD /* ContainerController.swift */; };
 		D37998211B63E192006928AD /* MenuPageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379981F1B63E192006928AD /* MenuPageFlow.swift */; };
 		D37998221B63E192006928AD /* FirstPageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998201B63E192006928AD /* FirstPageFlow.swift */; };
-		D37998351B63E335006928AD /* ControlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F71B63DF40006928AD /* ControlValidator.swift */; };
-		D37998361B63E337006928AD /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F81B63DF40006928AD /* FormValidator.swift */; };
-		D37998371B63E33A006928AD /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F91B63DF40006928AD /* Validatable.swift */; };
-		D37998381B63E33C006928AD /* ValidationChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FA1B63DF40006928AD /* ValidationChecking.swift */; };
-		D37998391B63E340006928AD /* VTMinimum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FB1B63DF40006928AD /* VTMinimum.swift */; };
-		D379983A1B63E343006928AD /* VTNumericString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FC1B63DF40006928AD /* VTNumericString.swift */; };
-		D379983B1B63E345006928AD /* VTRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FD1B63DF40006928AD /* VTRequired.swift */; };
-		D379983C1B63E34A006928AD /* TableCellLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F51B63DF40006928AD /* TableCellLoadable.swift */; };
-		D379983D1B63E34C006928AD /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F41B63DF40006928AD /* NibLoadable.swift */; };
-		D379983E1B63E350006928AD /* FormControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F31B63DF40006928AD /* FormControlDelegate.swift */; };
-		D379983F1B63E354006928AD /* CustomAccessoryViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F21B63DF40006928AD /* CustomAccessoryViewDelegate.swift */; };
-		D37998401B63E357006928AD /* AccessoryViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F11B63DF40006928AD /* AccessoryViewLoadable.swift */; };
-		D37998411B63E35D006928AD /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997ED1B63DF40006928AD /* UITableViewExtension.swift */; };
-		D37998421B63E362006928AD /* BaseFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997E91B63DF40006928AD /* BaseFormController.swift */; };
-		D37998431B63E365006928AD /* FormControlList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998171B63DFA3006928AD /* FormControlList.swift */; };
-		D37998441B63E37F006928AD /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998191B63E096006928AD /* CustomInputAccessoryView.swift */; };
-		D37998451B63E382006928AD /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998011B63DF40006928AD /* BaseView.swift */; };
-		D37998461B63E384006928AD /* BaseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998001B63DF40006928AD /* BaseFormView.swift */; };
+		D37998351B63E335006928AD /* AUControlValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F71B63DF40006928AD /* AUControlValidator.swift */; };
+		D37998361B63E337006928AD /* AUFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F81B63DF40006928AD /* AUFormValidator.swift */; };
+		D37998371B63E33A006928AD /* AUValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F91B63DF40006928AD /* AUValidatable.swift */; };
+		D37998381B63E33C006928AD /* AUValidationChecking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997FA1B63DF40006928AD /* AUValidationChecking.swift */; };
+		D379983C1B63E34A006928AD /* AUFormControlLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F51B63DF40006928AD /* AUFormControlLoadable.swift */; };
+		D379983D1B63E34C006928AD /* AUNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F41B63DF40006928AD /* AUNibLoadable.swift */; };
+		D379983E1B63E350006928AD /* AUFormControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F31B63DF40006928AD /* AUFormControlDelegate.swift */; };
+		D379983F1B63E354006928AD /* AUAccessoryViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F21B63DF40006928AD /* AUAccessoryViewDelegate.swift */; };
+		D37998401B63E357006928AD /* AUAccessoryViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997F11B63DF40006928AD /* AUAccessoryViewLoadable.swift */; };
+		D37998411B63E35D006928AD /* AUFormViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997ED1B63DF40006928AD /* AUFormViewExtension.swift */; };
+		D37998431B63E365006928AD /* AUFormControlList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998171B63DFA3006928AD /* AUFormControlList.swift */; };
+		D37998441B63E37F006928AD /* AUInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998191B63E096006928AD /* AUInputAccessoryView.swift */; };
+		D37998451B63E382006928AD /* AUBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998011B63DF40006928AD /* AUBaseView.swift */; };
+		D37998461B63E384006928AD /* AUBaseFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998001B63DF40006928AD /* AUBaseFormView.swift */; };
 		D379984D1B63EA0F006928AD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379984B1B63EA0F006928AD /* FirstViewController.swift */; };
 		D379984E1B63EA0F006928AD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379984C1B63EA0F006928AD /* SecondViewController.swift */; };
 		D37998531B63EA27006928AD /* CustomSimpleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379984F1B63EA27006928AD /* CustomSimpleButtonView.swift */; };
@@ -64,6 +57,11 @@
 		D379985C1B63EA82006928AD /* ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998591B63EA82006928AD /* ValidationTests.swift */; };
 		D379985D1B63EA99006928AD /* CustomSimpleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379984F1B63EA27006928AD /* CustomSimpleButtonView.swift */; };
 		D379985E1B63EA9B006928AD /* CustomTextBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998521B63EA27006928AD /* CustomTextBoxView.swift */; };
+		D37998621B63FDF3006928AD /* VTMinimum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379985F1B63FDF3006928AD /* VTMinimum.swift */; };
+		D37998641B63FDF3006928AD /* VTRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998611B63FDF3006928AD /* VTRequired.swift */; };
+		D37998661B63FEEC006928AD /* VTRequired.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37998611B63FDF3006928AD /* VTRequired.swift */; };
+		D37998671B63FEEF006928AD /* VTMinimum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379985F1B63FDF3006928AD /* VTMinimum.swift */; };
+		D37998691B640216006928AD /* AUBaseFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37997E91B63DF40006928AD /* AUBaseFormController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,28 +82,25 @@
 		D37997D11B63DCF1006928AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D37997D71B63DCF2006928AD /* SampleFormPageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFormPageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37997DC1B63DCF2006928AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D37997E91B63DF40006928AD /* BaseFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFormController.swift; sourceTree = "<group>"; };
-		D37997EA1B63DF40006928AD /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
-		D37997ED1B63DF40006928AD /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
-		D37997EF1B63DF40006928AD /* BasePageFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageFlow.swift; sourceTree = "<group>"; };
-		D37997F11B63DF40006928AD /* AccessoryViewLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryViewLoadable.swift; sourceTree = "<group>"; };
-		D37997F21B63DF40006928AD /* CustomAccessoryViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAccessoryViewDelegate.swift; sourceTree = "<group>"; };
-		D37997F31B63DF40006928AD /* FormControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormControlDelegate.swift; sourceTree = "<group>"; };
-		D37997F41B63DF40006928AD /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
-		D37997F51B63DF40006928AD /* TableCellLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellLoadable.swift; sourceTree = "<group>"; };
-		D37997F71B63DF40006928AD /* ControlValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlValidator.swift; sourceTree = "<group>"; };
-		D37997F81B63DF40006928AD /* FormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
-		D37997F91B63DF40006928AD /* Validatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
-		D37997FA1B63DF40006928AD /* ValidationChecking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationChecking.swift; sourceTree = "<group>"; };
-		D37997FB1B63DF40006928AD /* VTMinimum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTMinimum.swift; sourceTree = "<group>"; };
-		D37997FC1B63DF40006928AD /* VTNumericString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTNumericString.swift; sourceTree = "<group>"; };
-		D37997FD1B63DF40006928AD /* VTRequired.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTRequired.swift; sourceTree = "<group>"; };
-		D37997FF1B63DF40006928AD /* BaseFormController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseFormController.xib; sourceTree = "<group>"; };
-		D37998001B63DF40006928AD /* BaseFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFormView.swift; sourceTree = "<group>"; };
-		D37998011B63DF40006928AD /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		D37998171B63DFA3006928AD /* FormControlList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormControlList.swift; sourceTree = "<group>"; };
-		D37998191B63E096006928AD /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
-		D379981A1B63E096006928AD /* CustomInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInputAccessoryView.xib; sourceTree = "<group>"; };
+		D37997E91B63DF40006928AD /* AUBaseFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUBaseFormController.swift; sourceTree = "<group>"; };
+		D37997EA1B63DF40006928AD /* AUBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUBaseNavigationController.swift; sourceTree = "<group>"; };
+		D37997ED1B63DF40006928AD /* AUFormViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUFormViewExtension.swift; sourceTree = "<group>"; };
+		D37997EF1B63DF40006928AD /* AUBasePageFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUBasePageFlow.swift; sourceTree = "<group>"; };
+		D37997F11B63DF40006928AD /* AUAccessoryViewLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUAccessoryViewLoadable.swift; sourceTree = "<group>"; };
+		D37997F21B63DF40006928AD /* AUAccessoryViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUAccessoryViewDelegate.swift; sourceTree = "<group>"; };
+		D37997F31B63DF40006928AD /* AUFormControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUFormControlDelegate.swift; sourceTree = "<group>"; };
+		D37997F41B63DF40006928AD /* AUNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUNibLoadable.swift; sourceTree = "<group>"; };
+		D37997F51B63DF40006928AD /* AUFormControlLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUFormControlLoadable.swift; sourceTree = "<group>"; };
+		D37997F71B63DF40006928AD /* AUControlValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUControlValidator.swift; sourceTree = "<group>"; };
+		D37997F81B63DF40006928AD /* AUFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUFormValidator.swift; sourceTree = "<group>"; };
+		D37997F91B63DF40006928AD /* AUValidatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUValidatable.swift; sourceTree = "<group>"; };
+		D37997FA1B63DF40006928AD /* AUValidationChecking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUValidationChecking.swift; sourceTree = "<group>"; };
+		D37997FF1B63DF40006928AD /* AUBaseFormController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AUBaseFormController.xib; sourceTree = "<group>"; };
+		D37998001B63DF40006928AD /* AUBaseFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUBaseFormView.swift; sourceTree = "<group>"; };
+		D37998011B63DF40006928AD /* AUBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUBaseView.swift; sourceTree = "<group>"; };
+		D37998171B63DFA3006928AD /* AUFormControlList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUFormControlList.swift; sourceTree = "<group>"; };
+		D37998191B63E096006928AD /* AUInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AUInputAccessoryView.swift; sourceTree = "<group>"; };
+		D379981A1B63E096006928AD /* AUInputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AUInputAccessoryView.xib; sourceTree = "<group>"; };
 		D379981D1B63E17E006928AD /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		D379981F1B63E192006928AD /* MenuPageFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPageFlow.swift; sourceTree = "<group>"; };
 		D37998201B63E192006928AD /* FirstPageFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPageFlow.swift; sourceTree = "<group>"; };
@@ -118,6 +113,8 @@
 		D37998571B63EA82006928AD /* BaseFormControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFormControllerTests.swift; sourceTree = "<group>"; };
 		D37998581B63EA82006928AD /* FormControlListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormControlListTests.swift; sourceTree = "<group>"; };
 		D37998591B63EA82006928AD /* ValidationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationTests.swift; sourceTree = "<group>"; };
+		D379985F1B63FDF3006928AD /* VTMinimum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTMinimum.swift; sourceTree = "<group>"; };
+		D37998611B63FDF3006928AD /* VTRequired.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTRequired.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +156,10 @@
 		D37997C41B63DCF1006928AD /* SampleFormPage */ = {
 			isa = PBXGroup;
 			children = (
-				D379984A1B63E3DE006928AD /* PageFlows */,
-				D37998491B63E3CE006928AD /* Controllers */,
-				D37998481B63E3BA006928AD /* Views */,
+				D37998651B63FDF7006928AD /* SampleValidations */,
+				D379984A1B63E3DE006928AD /* SamplePageFlows */,
+				D37998491B63E3CE006928AD /* SampleControllers */,
+				D37998481B63E3BA006928AD /* SampleViews */,
 				D37997E71B63DF40006928AD /* AUForms */,
 				D37997C71B63DCF1006928AD /* AppDelegate.swift */,
 				D37997CE1B63DCF1006928AD /* Images.xcassets */,
@@ -215,8 +213,8 @@
 		D37997E81B63DF40006928AD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D37997E91B63DF40006928AD /* BaseFormController.swift */,
-				D37997EA1B63DF40006928AD /* BaseNavigationController.swift */,
+				D37997E91B63DF40006928AD /* AUBaseFormController.swift */,
+				D37997EA1B63DF40006928AD /* AUBaseNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,7 +222,7 @@
 		D37997EC1B63DF40006928AD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D37997ED1B63DF40006928AD /* UITableViewExtension.swift */,
+				D37997ED1B63DF40006928AD /* AUFormViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,7 +230,7 @@
 		D37997EE1B63DF40006928AD /* PageFlows */ = {
 			isa = PBXGroup;
 			children = (
-				D37997EF1B63DF40006928AD /* BasePageFlow.swift */,
+				D37997EF1B63DF40006928AD /* AUBasePageFlow.swift */,
 			);
 			path = PageFlows;
 			sourceTree = "<group>";
@@ -240,11 +238,11 @@
 		D37997F01B63DF40006928AD /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				D37997F11B63DF40006928AD /* AccessoryViewLoadable.swift */,
-				D37997F21B63DF40006928AD /* CustomAccessoryViewDelegate.swift */,
-				D37997F31B63DF40006928AD /* FormControlDelegate.swift */,
-				D37997F41B63DF40006928AD /* NibLoadable.swift */,
-				D37997F51B63DF40006928AD /* TableCellLoadable.swift */,
+				D37997F11B63DF40006928AD /* AUAccessoryViewLoadable.swift */,
+				D37997F21B63DF40006928AD /* AUAccessoryViewDelegate.swift */,
+				D37997F31B63DF40006928AD /* AUFormControlDelegate.swift */,
+				D37997F41B63DF40006928AD /* AUNibLoadable.swift */,
+				D37997F51B63DF40006928AD /* AUFormControlLoadable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -252,13 +250,10 @@
 		D37997F61B63DF40006928AD /* Validations */ = {
 			isa = PBXGroup;
 			children = (
-				D37997F71B63DF40006928AD /* ControlValidator.swift */,
-				D37997F81B63DF40006928AD /* FormValidator.swift */,
-				D37997F91B63DF40006928AD /* Validatable.swift */,
-				D37997FA1B63DF40006928AD /* ValidationChecking.swift */,
-				D37997FB1B63DF40006928AD /* VTMinimum.swift */,
-				D37997FC1B63DF40006928AD /* VTNumericString.swift */,
-				D37997FD1B63DF40006928AD /* VTRequired.swift */,
+				D37997F71B63DF40006928AD /* AUControlValidator.swift */,
+				D37997F81B63DF40006928AD /* AUFormValidator.swift */,
+				D37997F91B63DF40006928AD /* AUValidatable.swift */,
+				D37997FA1B63DF40006928AD /* AUValidationChecking.swift */,
 			);
 			path = Validations;
 			sourceTree = "<group>";
@@ -266,11 +261,11 @@
 		D37997FE1B63DF40006928AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D37997FF1B63DF40006928AD /* BaseFormController.xib */,
-				D37998001B63DF40006928AD /* BaseFormView.swift */,
-				D37998011B63DF40006928AD /* BaseView.swift */,
-				D37998191B63E096006928AD /* CustomInputAccessoryView.swift */,
-				D379981A1B63E096006928AD /* CustomInputAccessoryView.xib */,
+				D37998011B63DF40006928AD /* AUBaseView.swift */,
+				D37998001B63DF40006928AD /* AUBaseFormView.swift */,
+				D37997FF1B63DF40006928AD /* AUBaseFormController.xib */,
+				D37998191B63E096006928AD /* AUInputAccessoryView.swift */,
+				D379981A1B63E096006928AD /* AUInputAccessoryView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,12 +273,12 @@
 		D37998161B63DFA3006928AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D37998171B63DFA3006928AD /* FormControlList.swift */,
+				D37998171B63DFA3006928AD /* AUFormControlList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D37998481B63E3BA006928AD /* Views */ = {
+		D37998481B63E3BA006928AD /* SampleViews */ = {
 			isa = PBXGroup;
 			children = (
 				D379984F1B63EA27006928AD /* CustomSimpleButtonView.swift */,
@@ -291,26 +286,35 @@
 				D37998511B63EA27006928AD /* CustomTextBoxControl.xib */,
 				D37998521B63EA27006928AD /* CustomTextBoxView.swift */,
 			);
-			name = Views;
+			name = SampleViews;
 			sourceTree = "<group>";
 		};
-		D37998491B63E3CE006928AD /* Controllers */ = {
+		D37998491B63E3CE006928AD /* SampleControllers */ = {
 			isa = PBXGroup;
 			children = (
 				D379981D1B63E17E006928AD /* ContainerController.swift */,
 				D379984B1B63EA0F006928AD /* FirstViewController.swift */,
 				D379984C1B63EA0F006928AD /* SecondViewController.swift */,
 			);
-			name = Controllers;
+			name = SampleControllers;
 			sourceTree = "<group>";
 		};
-		D379984A1B63E3DE006928AD /* PageFlows */ = {
+		D379984A1B63E3DE006928AD /* SamplePageFlows */ = {
 			isa = PBXGroup;
 			children = (
 				D379981F1B63E192006928AD /* MenuPageFlow.swift */,
 				D37998201B63E192006928AD /* FirstPageFlow.swift */,
 			);
-			name = PageFlows;
+			name = SamplePageFlows;
+			sourceTree = "<group>";
+		};
+		D37998651B63FDF7006928AD /* SampleValidations */ = {
+			isa = PBXGroup;
+			children = (
+				D379985F1B63FDF3006928AD /* VTMinimum.swift */,
+				D37998611B63FDF3006928AD /* VTRequired.swift */,
+			);
+			name = SampleValidations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,11 +397,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37998131B63DF40006928AD /* BaseFormController.xib in Resources */,
+				D37998131B63DF40006928AD /* AUBaseFormController.xib in Resources */,
 				D37998541B63EA27006928AD /* CustomSimpleButtonView.xib in Resources */,
 				D37997D21B63DCF1006928AD /* LaunchScreen.xib in Resources */,
 				D37997CF1B63DCF1006928AD /* Images.xcassets in Resources */,
-				D379981C1B63E096006928AD /* CustomInputAccessoryView.xib in Resources */,
+				D379981C1B63E096006928AD /* AUInputAccessoryView.xib in Resources */,
 				D37998551B63EA27006928AD /* CustomTextBoxControl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,34 +420,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37998101B63DF40006928AD /* VTMinimum.swift in Sources */,
-				D37998141B63DF40006928AD /* BaseFormView.swift in Sources */,
-				D37998021B63DF40006928AD /* BaseFormController.swift in Sources */,
-				D379981B1B63E096006928AD /* CustomInputAccessoryView.swift in Sources */,
-				D37998061B63DF40006928AD /* BasePageFlow.swift in Sources */,
-				D37998111B63DF40006928AD /* VTNumericString.swift in Sources */,
-				D37998071B63DF40006928AD /* AccessoryViewLoadable.swift in Sources */,
-				D379980A1B63DF40006928AD /* NibLoadable.swift in Sources */,
-				D37998151B63DF40006928AD /* BaseView.swift in Sources */,
+				D37998141B63DF40006928AD /* AUBaseFormView.swift in Sources */,
+				D37998021B63DF40006928AD /* AUBaseFormController.swift in Sources */,
+				D37998621B63FDF3006928AD /* VTMinimum.swift in Sources */,
+				D379981B1B63E096006928AD /* AUInputAccessoryView.swift in Sources */,
+				D37998061B63DF40006928AD /* AUBasePageFlow.swift in Sources */,
+				D37998071B63DF40006928AD /* AUAccessoryViewLoadable.swift in Sources */,
+				D379980A1B63DF40006928AD /* AUNibLoadable.swift in Sources */,
+				D37998151B63DF40006928AD /* AUBaseView.swift in Sources */,
 				D379984D1B63EA0F006928AD /* FirstViewController.swift in Sources */,
 				D379981E1B63E17E006928AD /* ContainerController.swift in Sources */,
-				D379980C1B63DF40006928AD /* ControlValidator.swift in Sources */,
+				D379980C1B63DF40006928AD /* AUControlValidator.swift in Sources */,
 				D37998221B63E192006928AD /* FirstPageFlow.swift in Sources */,
-				D379980D1B63DF40006928AD /* FormValidator.swift in Sources */,
+				D379980D1B63DF40006928AD /* AUFormValidator.swift in Sources */,
 				D37998211B63E192006928AD /* MenuPageFlow.swift in Sources */,
-				D379980F1B63DF40006928AD /* ValidationChecking.swift in Sources */,
+				D37998641B63FDF3006928AD /* VTRequired.swift in Sources */,
+				D379980F1B63DF40006928AD /* AUValidationChecking.swift in Sources */,
 				D37998531B63EA27006928AD /* CustomSimpleButtonView.swift in Sources */,
-				D37998091B63DF40006928AD /* FormControlDelegate.swift in Sources */,
+				D37998091B63DF40006928AD /* AUFormControlDelegate.swift in Sources */,
 				D379984E1B63EA0F006928AD /* SecondViewController.swift in Sources */,
-				D379980B1B63DF40006928AD /* TableCellLoadable.swift in Sources */,
-				D37998081B63DF40006928AD /* CustomAccessoryViewDelegate.swift in Sources */,
-				D37998181B63DFA3006928AD /* FormControlList.swift in Sources */,
-				D37998051B63DF40006928AD /* UITableViewExtension.swift in Sources */,
+				D379980B1B63DF40006928AD /* AUFormControlLoadable.swift in Sources */,
+				D37998081B63DF40006928AD /* AUAccessoryViewDelegate.swift in Sources */,
+				D37998181B63DFA3006928AD /* AUFormControlList.swift in Sources */,
+				D37998051B63DF40006928AD /* AUFormViewExtension.swift in Sources */,
 				D37997C81B63DCF1006928AD /* AppDelegate.swift in Sources */,
-				D37998121B63DF40006928AD /* VTRequired.swift in Sources */,
-				D37998031B63DF40006928AD /* BaseNavigationController.swift in Sources */,
+				D37998031B63DF40006928AD /* AUBaseNavigationController.swift in Sources */,
 				D37998561B63EA27006928AD /* CustomTextBoxView.swift in Sources */,
-				D379980E1B63DF40006928AD /* Validatable.swift in Sources */,
+				D379980E1B63DF40006928AD /* AUValidatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,29 +454,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D37998391B63E340006928AD /* VTMinimum.swift in Sources */,
+				D37998671B63FEEF006928AD /* VTMinimum.swift in Sources */,
 				D379985B1B63EA82006928AD /* FormControlListTests.swift in Sources */,
-				D37998361B63E337006928AD /* FormValidator.swift in Sources */,
-				D379983B1B63E345006928AD /* VTRequired.swift in Sources */,
-				D37998411B63E35D006928AD /* UITableViewExtension.swift in Sources */,
-				D379983F1B63E354006928AD /* CustomAccessoryViewDelegate.swift in Sources */,
-				D379983E1B63E350006928AD /* FormControlDelegate.swift in Sources */,
-				D37998401B63E357006928AD /* AccessoryViewLoadable.swift in Sources */,
-				D37998451B63E382006928AD /* BaseView.swift in Sources */,
-				D37998371B63E33A006928AD /* Validatable.swift in Sources */,
+				D37998361B63E337006928AD /* AUFormValidator.swift in Sources */,
+				D37998411B63E35D006928AD /* AUFormViewExtension.swift in Sources */,
+				D379983F1B63E354006928AD /* AUAccessoryViewDelegate.swift in Sources */,
+				D379983E1B63E350006928AD /* AUFormControlDelegate.swift in Sources */,
+				D37998401B63E357006928AD /* AUAccessoryViewLoadable.swift in Sources */,
+				D37998451B63E382006928AD /* AUBaseView.swift in Sources */,
+				D37998371B63E33A006928AD /* AUValidatable.swift in Sources */,
 				D379985C1B63EA82006928AD /* ValidationTests.swift in Sources */,
-				D37998351B63E335006928AD /* ControlValidator.swift in Sources */,
+				D37998351B63E335006928AD /* AUControlValidator.swift in Sources */,
 				D379985A1B63EA82006928AD /* BaseFormControllerTests.swift in Sources */,
-				D379983C1B63E34A006928AD /* TableCellLoadable.swift in Sources */,
-				D37998381B63E33C006928AD /* ValidationChecking.swift in Sources */,
-				D37998441B63E37F006928AD /* CustomInputAccessoryView.swift in Sources */,
-				D37998421B63E362006928AD /* BaseFormController.swift in Sources */,
-				D379983D1B63E34C006928AD /* NibLoadable.swift in Sources */,
-				D37998461B63E384006928AD /* BaseFormView.swift in Sources */,
+				D379983C1B63E34A006928AD /* AUFormControlLoadable.swift in Sources */,
+				D37998381B63E33C006928AD /* AUValidationChecking.swift in Sources */,
+				D37998441B63E37F006928AD /* AUInputAccessoryView.swift in Sources */,
+				D37998661B63FEEC006928AD /* VTRequired.swift in Sources */,
+				D379983D1B63E34C006928AD /* AUNibLoadable.swift in Sources */,
+				D37998461B63E384006928AD /* AUBaseFormView.swift in Sources */,
 				D379985E1B63EA9B006928AD /* CustomTextBoxView.swift in Sources */,
+				D37998691B640216006928AD /* AUBaseFormController.swift in Sources */,
 				D379985D1B63EA99006928AD /* CustomSimpleButtonView.swift in Sources */,
-				D379983A1B63E343006928AD /* VTNumericString.swift in Sources */,
-				D37998431B63E365006928AD /* FormControlList.swift in Sources */,
+				D37998431B63E365006928AD /* AUFormControlList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

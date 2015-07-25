@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  AUFormControlLoadable.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -21,14 +21,7 @@
 //  SOFTWARE.
 
 import UIKit
-
-class MenuPageFlow :AUBasePageFlow{
-    
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
-        
-        self.navigationController?.push(firstController)
-    }
+protocol AUFormControlLoadable : NibLoadable{
+    func getRowHeight() -> CGFloat
+    func getReusableIdentifier() -> String
 }

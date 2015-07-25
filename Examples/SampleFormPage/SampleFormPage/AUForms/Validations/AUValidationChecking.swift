@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  AUValidationChecking.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -20,15 +20,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import UIKit
-
-class MenuPageFlow :AUBasePageFlow{
-    
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
-        
-        self.navigationController?.push(firstController)
-    }
+protocol AUValidationChecking{
+    func check(value:AnyObject?)->Bool
+    func getErrorMessage()->String
 }

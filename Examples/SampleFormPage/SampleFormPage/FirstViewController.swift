@@ -20,7 +20,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-class FirstViewController:BaseFormController{
+class FirstViewController:AUBaseFormController{
     
     var pageFlow : FirstPageFlow!
     
@@ -31,10 +31,10 @@ class FirstViewController:BaseFormController{
         let stringControl = CustomTextBoxView(title: "String:")
         let button = CustomSimpleButtonView(title: "Submit", buttonPressCallback: {[weak self] in self!.formSubmitted()})
         
-        var numberValidator = ControlValidator()
+        var numberValidator = AUControlValidator()
             .addRule(VTRequired())
             .addRule(VTMinimum(baseValue: 5))
-        var stringValidator = ControlValidator().addRule(VTRequired())
+        var stringValidator = AUControlValidator().addRule(VTRequired())
         
         numberControl.controlValidation = numberValidator
         stringControl.controlValidation = stringValidator

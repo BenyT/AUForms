@@ -20,7 +20,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-class SecondViewController:BaseFormController{
+class SecondViewController:AUBaseFormController{
     
     override func viewDidLoad() {
         super.viewDidLoad()

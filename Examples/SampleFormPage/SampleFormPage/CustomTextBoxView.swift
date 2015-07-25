@@ -21,7 +21,7 @@
 //  SOFTWARE.
 import UIKit
 
-class CustomTextBoxView : BaseFormView, UITextFieldDelegate{
+class CustomTextBoxView : AUBaseFormView, UITextFieldDelegate{
     
     @IBOutlet private weak var controlNameLbl: UILabel!
     @IBOutlet private weak var controlNameTxt: UITextField!
@@ -61,7 +61,7 @@ class CustomTextBoxView : BaseFormView, UITextFieldDelegate{
         return self.controlNameTxt.becomeFirstResponder()
     }
     
-    //MARK: AccessoryViewLoadable implementations
+    //MARK: AUAccessoryViewLoadable implementations
     override func setInputAccessoryView(view: UIView){
         self.controlNameTxt.inputAccessoryView = view
         self.controlNameTxt.autocorrectionType = UITextAutocorrectionType.No
@@ -70,7 +70,7 @@ class CustomTextBoxView : BaseFormView, UITextFieldDelegate{
         return true
     }
     
-    //MARK: Validatable implementations
+    //MARK: AUValidatable implementations
     override func getValidationValue() -> AnyObject?{
         return self.textValue
     }

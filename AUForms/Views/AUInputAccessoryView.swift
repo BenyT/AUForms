@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  AUInputAccessoryView.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,16 +19,43 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-
 import UIKit
 
-class MenuPageFlow :AUBasePageFlow{
+class AUInputAccessoryView:AUBaseView{
+   
+    @IBOutlet private weak var previousButton: UIBarButtonItem!
+    @IBOutlet private weak var nextButton: UIBarButtonItem!
+    @IBOutlet private weak var rightMostButton: UIBarButtonItem!
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
-        
-        self.navigationController?.push(firstController)
+    weak var delegate : AUCustomAccessoryViewDelegate?
+    
+    ///Owner component of accessoryview
+    weak var owner : AUBaseView?
+    
+    override func getNibName()->String{
+        return "AUInputAccessoryView"
+    }
+    
+    func setDoneTitle(title:String){
+        self.rightMostButton.title = title
+    }
+    
+    @IBAction func rightMostButtonPressed(sender: AnyObject) {
+        delegate?.accessoryViewDoneAction(self)
+    }
+    
+    @IBAction func nextButtonPressed(sender: AnyObject) {
+        delegate?.accessoryViewNextAction(self)
+    }
+    
+    @IBAction func previousButtonPressed(sender: AnyObject) {
+        delegate?.accessoryViewPreviousAction(self)
+    }
+    
+    func setNextEnable(status:Bool){
+        self.nextButton.enabled = status
+    }
+    func setPreviousEnable(status:Bool){
+        self.previousButton.enabled = status
     }
 }

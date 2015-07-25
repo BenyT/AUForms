@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  AUControlValidator.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,16 +19,40 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-
-import UIKit
-
-class MenuPageFlow :AUBasePageFlow{
+import Foundation
+class AUControlValidator:Equatable{
+    private var validationTypes = [AUValidationChecking]()
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
+    weak var delegate : AUValidatable?
+    
+    init(){
         
-        self.navigationController?.push(firstController)
     }
+    
+    func validate() -> Bool{
+        
+        let AUValidatableValue: AnyObject? = delegate?.getValidationValue()
+        for type in validationTypes{
+            if !type.check(AUValidatableValue){
+                let errorMsg = type.getErrorMessage()
+                delegate?.setValidationError(errorMsg)
+                
+                return false
+            } else{
+                delegate?.setValidationSuccess()
+            }
+        }
+        return true
+    }
+    
+    //Fluent interface for readability
+    func addRule(newRule:AUValidationChecking)->AUControlValidator{
+        self.validationTypes.append(newRule)
+        return self
+    }
+}
+
+//TODO: Use indexof() func instead of this in swift 2.0
+func == (lhs: AUControlValidator, rhs: AUControlValidator) -> Bool {
+    return lhs === rhs
 }

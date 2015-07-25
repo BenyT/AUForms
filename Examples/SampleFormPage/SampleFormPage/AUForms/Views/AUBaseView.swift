@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  AUBaseView.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,16 +19,39 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
-
 import UIKit
 
-class MenuPageFlow :AUBasePageFlow{
+class AUBaseView: UIView{
+    @IBOutlet weak var view: UIView!
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
+    init(){
+        super.init(frame: CGRectZero)
         
-        self.navigationController?.push(firstController)
+        self.loadNib()
+     
+    }
+    override init(frame: CGRect){
+        super.init(frame: frame)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder:aDecoder)
+    }
+
+    
+    func loadNib(){
+        let nib = UINib(nibName: getNibName()  , bundle: nil)
+        
+        nib.instantiateWithOwner(self, options: nil)
+        self.layoutNib()
+        self.addSubview(self.view)
+    }
+    
+    private func layoutNib(){
+        self.view.autoresizingMask = .FlexibleWidth
+    }
+    func getNibName()->String{
+        assert(false, "This method must be overriden")
+        return ""
     }
 }

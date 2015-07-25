@@ -1,5 +1,6 @@
 //
-//  MenuPageFlow.swift
+//  VTRequired.swift
+//  FormPageFramework
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -20,15 +21,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import UIKit
-
-class MenuPageFlow :AUBasePageFlow{
+class VTRequired: AUValidationChecking{
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
+    func check(value:AnyObject?)->Bool{
         
-        self.navigationController?.push(firstController)
+        if let txtValue = value as? String{
+            return !txtValue.isEmpty
+        }
+        return false
+    }
+    
+    func getErrorMessage()->String{
+        return "Required"
     }
 }

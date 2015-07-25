@@ -20,10 +20,10 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-class FirstPageFlow:BasePageFlow{
+class FirstPageFlow:AUBasePageFlow{
     
     func openSecondPage(){
-        let secondController : SecondViewController = SecondViewController(nibName: "BaseFormController", bundle: nil)
+        let secondController : SecondViewController = SecondViewController(nibName: "AUBaseFormController", bundle: nil)
         
         navigationController?.push(secondController)
     }

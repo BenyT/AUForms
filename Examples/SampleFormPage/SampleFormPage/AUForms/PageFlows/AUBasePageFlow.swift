@@ -1,5 +1,5 @@
 //
-//  MenuPageFlow.swift
+//  AUBasePageFlow.swift
 //  Copyright (c) 2015 Anıl Uygun
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,16 +19,15 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
+import Foundation
+class AUBasePageFlow: NSObject {
+    weak var navigationController : AUBaseNavigationController?
 
-import UIKit
-
-class MenuPageFlow :AUBasePageFlow{
+    override init(){
+        super.init()
+    }
     
-    func openFirstPage(){
-        var firstController :  FirstViewController = FirstViewController(nibName: "AUBaseFormController", bundle: nil)
-        let flowController : FirstPageFlow = FirstPageFlow(navigationController: self.navigationController)
-        firstController.pageFlow = flowController
-        
-        self.navigationController?.push(firstController)
+    init(navigationController : AUBaseNavigationController?){
+        self.navigationController = navigationController
     }
 }

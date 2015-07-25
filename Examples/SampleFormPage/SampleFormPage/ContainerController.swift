@@ -23,14 +23,14 @@
 import UIKit
 
 class ContainerViewController : UIViewController{
-    var formNavigationController : BaseNavigationController!
+    var formNavigationController : AUBaseNavigationController!
     var menuFlow : MenuPageFlow!
     
     init(){
         super.init(nibName: nil, bundle: nil)
         
         //creating navigation controller and inserting into maincontroller
-        self.formNavigationController = BaseNavigationController()
+        self.formNavigationController = AUBaseNavigationController()
         
         view.addSubview(self.formNavigationController.view)
         self.addChildViewController(self.formNavigationController)
