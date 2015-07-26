@@ -7,7 +7,7 @@ AUForms is an iOs(Swift) library for creating custom controls/views, custom vali
 - Also you can run sample projects under AUForms/Examples to experience
 
 ##Usage
-I'm working on detailed documentation..
+I'm working on detailed documentation : [AUForms wiki](https://github.com/aniluyg/AUForms/wiki)
 
 ##Supported Versions
 - Swift 1.2 for now
